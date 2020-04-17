@@ -1,0 +1,32 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Be Vietnam', sans-serif;
+  color: $color-blue-dark;
+  font-weight: 300;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  row-gap: 3rem;
+}
